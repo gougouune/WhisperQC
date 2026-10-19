@@ -1,0 +1,21 @@
+# Versions épinglées — testées ensemble (Windows 11 / Python 3.10-3.11).
+# Ne pas mettre à jour sans relancer la comparaison SRT + un build complet.
+
+# Transcription
+faster-whisper==1.2.1
+ctranslate2==4.8.3
+onnxruntime==1.23.2      # VAD silero ; wheels macOS 13+
+av==15.1.0               # décodage audio (ffmpeg intégré) ; wheels macOS 13+
+tokenizers==0.23.3
+huggingface-hub==2.2.0
+numpy==2.2.6
+
+# Interface (mêmes versions que la v1, sauf Pillow 10.0 -> 11.3)
+customtkinter==5.2.2
+darkdetect==0.8.0
+packaging==26.3
+tkinterdnd2==0.4.3
+pillow==11.3.0
+
+# Certificats HTTPS (indispensable dans la .app macOS)
+certifi==2026.10.18

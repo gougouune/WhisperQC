@@ -1,0 +1,37 @@
+# Environnements Python
+.venv/
+.venv-build/
+venv/
+__pycache__/
+*.pyc
+
+# Sorties de build
+build/WhisperQC/
+dist/
+*.zip
+*.dmg
+
+# Gros binaires : jamais dans le repo (modèles et module GPU se
+# téléchargent au premier lancement, ffmpeg est intégré à PyAV)
+_models/
+models/
+*.bin
+*.onnx
+*.dll
+*.exe
+*.dylib
+
+# Médias et SRT de test
+*.mp4
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.srt
+SRT/
+
+# Config locale : contient la clé API, NE JAMAIS COMMITTER
+config.json
+
+# Brouillons de dev
+_scratch/
